@@ -15,6 +15,7 @@ public class ResultsPage extends BasePage{
 		clickElement(By.cssSelector(RCTcss));
 	}
 	
+	//Get and sysout text of the product opened in a new window (RCTItem)
 	public String getTextOfRCTItem() {
 		String txt1 = getElementText(By.cssSelector(".title-content-list a"));
 		System.out.println(txt1);
