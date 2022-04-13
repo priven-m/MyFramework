@@ -1,5 +1,7 @@
 package frameWorkClasses;
 
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -110,8 +112,32 @@ public class BasePage {
 		driver.findElement(pLocator).sendKeys(searchText);
 	}
 	
+	//Switch to window
+	public void SwitchToNewTab() {
+		//Selenium will check how many windows are currently open,
+		//It will store the ID for both parent and child window
+		Set<String> handles = driver.getWindowHandles();
+		
+		Iterator<String> it = handles.iterator(); // using the it object you can access the ID
+		String parentWindow = it.next();
+		String childWindow = it.next();
+		driver.switchTo().window(childWindow); //Switch to new window by passing the ID of the child window
+	}	
+	
+	public void SwitchToParent() {
+		//Selenium will check how many windows are currently open,
+		//It will store the ID for both parent and child window
+		Set<String> handles = driver.getWindowHandles();
+		
+		Iterator<String> it = handles.iterator(); // using the it object you can access the ID
+		String parentWindow = it.next();
+		String childWindow = it.next();
+		driver.switchTo().window(parentWindow); //Switch to new window by passing the ID of the child window
+	}
+	
 	//Clear text
 	
 	//Select from drop-down
-
+	
+	//Close browser after tests
 }

@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-07T18:20:00 SAST" name="Default suite" finished-at="2022-04-07T18:20:03 SAST" duration-ms="3770">
+  <suite started-at="2022-04-13T09:09:29 SAST" name="Default suite" finished-at="2022-04-13T09:09:45 SAST" duration-ms="16006">
     <groups>
     </groups>
-    <test started-at="2022-04-07T18:20:00 SAST" name="Default test" finished-at="2022-04-07T18:20:03 SAST" duration-ms="3770">
+    <test started-at="2022-04-13T09:09:29 SAST" name="Default test" finished-at="2022-04-13T09:09:45 SAST" duration-ms="16006">
       <class name="takeAlotTests.TestsTakeAlot">
-        <test-method signature="GIVEN_shopperIsOnLandingPage_WHEN_shopperEntersDKNUasSearchString_AND_shopperClicksTheSearchButton_THEN_DKNYBeDelicious()[pri:0, instance:takeAlotTests.TestsTakeAlot@23d1e5d0]" started-at="2022-04-07T18:20:00 SAST" name="GIVEN_shopperIsOnLandingPage_WHEN_shopperEntersDKNUasSearchString_AND_shopperClicksTheSearchButton_THEN_DKNYBeDelicious" finished-at="2022-04-07T18:20:03 SAST" duration-ms="3746" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:takeAlotTests.TestsTakeAlot@5553d0f5]" started-at="2022-04-13T09:09:29 SAST" name="SetUp" finished-at="2022-04-13T09:09:31 SAST" duration-ms="2352" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GIVEN_shopperIsOnLandingPage_WHEN_shopperEntersDKNUasSearchString_AND_shopperClicksTheSearchButton_THEN_DKNYBeDelicious -->
+        </test-method> <!-- SetUp -->
+        <test-method signature="GIVEN_ShopperOnLandingPage_WHEN_shopperEntersRCT3000VASasSearchString_AND_shopperClicksTheSearchButton_THEN_RCT3000upsReturned()[pri:0, instance:takeAlotTests.TestsTakeAlot@5553d0f5]" started-at="2022-04-13T09:09:31 SAST" name="GIVEN_ShopperOnLandingPage_WHEN_shopperEntersRCT3000VASasSearchString_AND_shopperClicksTheSearchButton_THEN_RCT3000upsReturned" finished-at="2022-04-13T09:09:37 SAST" duration-ms="6274" status="FAIL">
+          <exception class="java.util.NoSuchElementException">
+            <full-stacktrace>
+              <![CDATA[java.util.NoSuchElementException
+at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+at frameWorkClasses.BasePage.SwitchToNewTab(BasePage.java:124)
+at takeAlotTests.TestsTakeAlot.GIVEN_ShopperOnLandingPage_WHEN_shopperEntersRCT3000VASasSearchString_AND_shopperClicksTheSearchButton_THEN_RCT3000upsReturned(TestsTakeAlot.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.util.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GIVEN_ShopperOnLandingPage_WHEN_shopperEntersRCT3000VASasSearchString_AND_shopperClicksTheSearchButton_THEN_RCT3000upsReturned -->
+        <test-method signature="GIVEN_shopperIsOnLandingPage_WHEN_shopperEntersDKNUasSearchString_AND_shopperClicksTheSearchButton_THEN_DKNYBeDeliciousReturned()[pri:0, instance:takeAlotTests.TestsTakeAlot@5553d0f5]" started-at="2022-04-13T09:09:37 SAST" name="GIVEN_shopperIsOnLandingPage_WHEN_shopperEntersDKNUasSearchString_AND_shopperClicksTheSearchButton_THEN_DKNYBeDeliciousReturned" finished-at="2022-04-13T09:09:45 SAST" duration-ms="7334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GIVEN_shopperIsOnLandingPage_WHEN_shopperEntersDKNUasSearchString_AND_shopperClicksTheSearchButton_THEN_DKNYBeDeliciousReturned -->
       </class> <!-- takeAlotTests.TestsTakeAlot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
