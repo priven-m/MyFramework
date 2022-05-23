@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="takeAlotTests.TestsTakeAlot">
+      <class name="takeAlotTests.WriteToExcel">
         <methods>
-          <include name="SetUp"/>
-          <include name="GIVEN_ShopperOnLandingPage_WHEN_shopperEntersRCT3000VASasSearchString_AND_shopperClicksTheSearchButton_THEN_RCT3000upsReturned"/>
+          <include name="BrandQuantityString"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- takeAlotTests.TestsTakeAlot -->
+      </class> <!-- takeAlotTests.WriteToExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

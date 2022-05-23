@@ -3,8 +3,9 @@ package listeners;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import frameWorkClasses.BasePage;
 
-public class ListenersClass implements ITestListener {
+public class ListenersClass extends BasePage implements ITestListener{
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -34,6 +35,7 @@ public class ListenersClass implements ITestListener {
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onFinish(context);
+		cleanUp();
 	}
 
 }
