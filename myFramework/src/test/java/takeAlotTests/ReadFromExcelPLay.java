@@ -9,12 +9,15 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import frameWorkClasses.BasePage;
 import frameWorkClasses.ReadExcel;
 import frameWorkClasses.Utilities;
+import pageObjectsTakeAlot.LandingPage;
 
-public class ReadFromExcelPLay {
+public class ReadFromExcelPLay extends BasePage{
 
 	ReadExcel rExcel = new ReadExcel();
+	LandingPage landpage = new LandingPage();
 	Utilities uts = new Utilities();
 
 	String OutputDirectory = uts.getDataConfigPropeties("OutputDir");
@@ -34,7 +37,7 @@ public class ReadFromExcelPLay {
 
 	@Test(dataProvider = "Brand and Quantity")
 	public void BrandAndQuantityString(String brand, String quantity) {
-		System.out.println(brand + " " + quantity);
+		landpage.enterTextInSearchBar(quantity);
 	}
 
 	@Test(dataProvider = "Brand and Quantity")

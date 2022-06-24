@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="takeAlotTests.WriteToExcel">
+      <class name="AppiumTests.LongPressGestures">
         <methods>
-          <include name="BrandQuantityString"/>
-          <include name="setup"/>
+          <include name="LongClickOnMenu"/>
         </methods>
-      </class> <!-- takeAlotTests.WriteToExcel -->
+      </class> <!-- AppiumTests.LongPressGestures -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

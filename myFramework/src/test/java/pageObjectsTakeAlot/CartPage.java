@@ -57,4 +57,9 @@ public class CartPage extends BasePage {
 	public void removeFromCart() {
 		clickElement(By.cssSelector(".button.clear.remove-item"));
 	}
+
+	public String getTextOfSmartPhoneIncart() {
+		String actualText = getElementText(By.linkText("Smartphone"));
+		return actualText;
+	}
 }
